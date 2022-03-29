@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel = "icon" href = 
+        "https://cdn-icons-png.flaticon.com/512/2995/2995909.png"
+        type = "image/x-icon">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "title">Calculator</div>
+            <div class="content">
+                <form id = "form_details">
+                    <div class="values">
+                        <div class="input-box">
+                            <input type = "textbox"  name = "first_number" placeholder = "Enter first number" required>
+                        </div>
+
+                            <select name = "operation">
+                                <option value = "+">+</option>
+                                <option value = "-">-</option>
+                                <option value = "*">*</option>
+                                <option value = "/">/</option>
+                            </select>
+
+                        <div class="input-box">
+                            <input type = "textbox" name = "second_number" placeholder = "Enter second number" required>
+                        </div>
+                    </div>     
+                    <div class="button">
+                        <input type = "button"  id = "get_answer" value = "Get an answer">
+                    </div>     
+                </form>
+            </div>  
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src = "form_ajax.js"></script>
+    </body>
+</html>
